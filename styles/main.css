@@ -1,0 +1,105 @@
+body {
+    background: #300a24;
+}
+body > * {
+    margin-left: 5px;
+    color: white;
+}
+
+header * {
+    font-family: 'Ubuntu Mono', 'Consolas', monospace;
+    margin-bottom: 0px;
+}
+.wrapText {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+a {
+    color: #3363a4;
+}
+a:hover {
+    color: #ee2828;
+}
+footer {
+    text-align: center;
+}
+
+canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* Trick from https://www.tutorialspoint.com/Is-it-possible-to-have-an-HTML-canvas-element-in-the-background-of-my-page to put canvas in background*/
+    z-index: -1;
+    margin-left: 0px;
+ }
+ #up-btn {
+    display: hide;
+    opacity: 0;
+    position: fixed;
+    color: black;
+    background-color: #90909070;
+    padding: 20px;
+    bottom: 0px;
+    right: 0px;
+ }
+
+ /* For about.html */
+ img {
+     /* Makes a square image into a circle (see https://stackoverflow.com/questions/22445276/how-to-turn-images-into-circle-shape-bootstrap-3) */
+    border-radius: 50%;
+    float: right;
+    width: 10em;
+ }
+
+/* For portfolio.html */
+.center {
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+iframe {
+    width: 80vw !important; 
+    height: 50vh !important;
+}
+.vertAlign {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* For resume.html */
+table tr td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+table ul {
+    margin: 0px;
+    padding-top: 2px;
+}
+table ul li {
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+.table-list-last {
+    padding-bottom: 0px;
+}
+
+.list-header {
+    font-style: italic;
+}
+.heading {
+    font-weight: bold;
+    vertical-align: text-top;
+}
+
+.resume-dates {
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+}

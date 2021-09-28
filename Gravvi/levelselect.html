@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gravvi | Level Select</title>
+<style>
+
+body{
+  background-color: #110422;
+}
+
+.btn {
+  background-color: #110445;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 6px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: left;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  font-family: Trebuchet MS;
+  font-size: 30px;
+}
+
+#back{
+  position: absolute;
+  width: 100px;
+  margin-right: 50%;
+  margin-left: 1%;
+  height: 40px;
+  background-color: #000000;
+  border: none;
+  top: 40px;
+}
+#back:hover{
+  background-color: #FF0000;
+}
+.btn:hover{
+  background-color: #201350;
+}
+</style>
+<body>
+  <h1 align="center"><font size="100px" face="Arial" color="white">Level Selector</font></h1>
+  <canvas id = "canvas" width = "0" height="0" style="z-index: -1;"></canvas>
+  <form><button type = "submit" formaction = "index.html" id = "back"><font face = "arial" size = "6" color = "white" letter-spacing: 4px;> Back </font></button></form>
+  <div id="buttonContainer">
+
+  </div>
+  <script src = "base.js"></script>
+  <script src = "levelData.js"></script>
+  <script id="selectScript" src = "levelselect.js"></script>
+</body>
+</html>

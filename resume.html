@@ -1,15 +1,235 @@
 <!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="styles/normalize.css" />
 		<link rel="stylesheet" href="styles/main.css" />
-		<link rel="icon" href="images/favicon.png" />
+		<link rel="icon" href="images/favicon.ico" />
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu+Mono&display=swap');
+		</style> 
 	</head>
-	<body>
-		<h1>Resume</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel quam elementum pulvinar etiam non quam lacus. Eu volutpat odio facilisis mauris sit amet massa. Mi bibendum neque egestas congue quisque egestas. Sodales neque sodales ut etiam. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Aliquet enim tortor at auctor urna nunc. Elementum nibh tellus molestie nunc. Cursus in hac habitasse platea dictumst quisque sagittis. At consectetur lorem donec massa sapien faucibus et molestie ac.</p>
+	<body id="body">
+		<canvas id="canvas" width="0" height="0"></canvas>
+		<header>
+			<h1 class="wrapText">
+				<span style="color: #418906">W</span
+				><span style="color: #418906">e</span
+				><span style="color: #418906">b</span
+				><span style="color: #418906">s</span
+				><span style="color: #418906">i</span
+				><span style="color: #418906">t</span
+				><span style="color: #418906">e</span
+				><span style="color: #418906">O</span
+				><span style="color: #418906">f</span
+				><span style="color: #418906">E</span
+				><span style="color: #418906">n</span
+				><span style="color: #418906">&#x2011;</span
+				><span style="color: #418906">E</span
+				><span style="color: #418906">n</span
+				><span>:</span
+				><span style="color: #3363a4">~</span
+				><span style="color: #3363a4">/</span
+				><span style="color: #3363a4">r</span
+				><span style="color: #3363a4">e</span
+				><span style="color: #3363a4">s</span
+				><span style="color: #3363a4">u</span
+				><span style="color: #3363a4">m</span
+				><span style="color: #3363a4">e</span
+				><span>$</span
+				><span>&#xA0;</span
+				><span>l</span
+				><span>s</span
+				><span>&#xA0;</span
+				><span>.</span
+				><span>.</span>
+			</h1>
+			<h2 class="wrapText">
+				<a href="about.html">about</a>
+				<span>&nbsp;</span>
+				<a href="portfolio.html">portfolio</a>
+				<span>&nbsp;</span>
+				<a href="resume.html">resume</a>
+			</h2>
+		</header>
 
-		<p>Dui id ornare arcu odio ut sem nulla pharetra. Ultrices sagittis orci a scelerisque purus semper eget duis at. Diam phasellus vestibulum lorem sed. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Magna etiam tempor orci eu lobortis elementum nibh tellus. Ac felis donec et odio pellentesque diam volutpat commodo sed. Amet dictum sit amet justo donec enim diam vulputate ut. Faucibus a pellentesque sit amet porttitor eget dolor morbi. Purus viverra accumsan in nisl nisi scelerisque. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Mattis vulputate enim nulla aliquet. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Viverra aliquet eget sit amet tellus cras adipiscing enim eu. Aliquet enim tortor at auctor urna nunc id cursus. Metus aliquam eleifend mi in nulla posuere sollicitudin. Morbi tristique senectus et netus. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Odio euismod lacinia at quis risus sed vulputate odio ut. Viverra nam libero justo laoreet sit amet cursus sit. Urna id volutpat lacus laoreet non.</p>
-		<script src="scripts/thing.js"></script>
+		<h1>Résumé</h1>
+		<table>
+			<tbody>
+				<tr>
+					<td rowspan="6" class="heading">Education:</td>
+					<td class="heading">Bachelor of Science, Computer Science and Bachelor of Science, Mathematics</td>
+					<!-- <td rowspan="2" class="resume-dates">GPA: 3.76/4.0</td> -->
+				</tr>
+				<tr>
+					<td>Enrolled at Rose-Hulman Institute of Technology, Terre Haute, IN</td>
+				</tr>
+				<tr>
+					<td rowspan="3"><span class="list-header">Achievements:</span>
+						<ul>
+							<li>Rose-Hulman Institute of Technology’s Dean’s List</li>
+							<li class="table-list-last">Rose-Hulman Merit Scholar</li>
+						</ul>
+					</td>
+					<!-- <td><br/></td>			 -->
+				</tr>
+				<tr>
+					<!-- <td class="resume-dates">Fall 2020-Spring 2021</td> -->
+				</tr>
+				<tr>
+					<!-- <td class="resume-dates">2020-2021</td> -->
+				</tr>
+				<tr>
+					<td><span class="list-header">Courses:</span>
+						<ul>
+							<li>Introduction to Proofs</li>
+							<li>Data Structures & Algorithm Analysis</li>
+							<li>Operating Systems</li>
+							<li>Matrix Algebra & Differential Equations I, II</li>
+							<li class="table-list-last">Combinatorics</li>
+						</ul>
+					</td>
+					<!-- <td></td> -->
+				</tr>
+				<tr>
+					<td rowspan="3" class="heading">Skills:</td>
+					<td class="heading">Programming Languages:</td>
+					<!-- <td rowspan="3"></td> -->
+				</tr>
+				<tr>
+					<td><span class="list-header">Proficiencies:</span>
+						<ul>
+							<li>JavaScript</li>
+							<li>C</li>
+							<li>C++</li>
+							<li class="table-list-last">Java</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td><span class="list-header">Experience:</span>
+						<ul>
+							<li>Python</li>
+							<li class="table-list-last">Visual Basic</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="11" class="heading">Work Experience:</td>
+					<td class="heading"><a href="https://deemo.io">Deemo Games</a></td>
+					<!-- <td></td> -->
+				</tr>
+				<tr>
+					<td><span class="list-header"><a href="https://boxz.win">Boxz.win</a> Developer:</span>
+						<ul>
+							<li>Improving performance and code clarity</li>
+							<li class="table-list-last">Adding new features, including game modes and collectibles</li>
+						</ul>
+					</td>
+					<!-- <td class="resume-dates">Jun 2020-current</td> -->
+				</tr>
+				<tr>
+					<td class="heading">Rose-Hulman Institute of Technology</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><span class="list-header">Advanced Math-Physics Counselor:</span>
+						<ul>
+							<li>Graded Calculus III, Physics I, and Physics II work</li>
+							<li>Took students to and from meals, classes, and exams</li>
+							<li class="table-list-last">Maintained morale of the students</li>
+						</ul>
+					</td>
+					<!-- <td class="heading resume-dates">Jun-Jul 2021</td> -->
+				</tr>
+				<tr>
+					<td rowspan="7"><span class="list-header">Mathematics Department Grader:</span>
+						<ul>
+							<li>Calculus I</li>
+							<li>Calculus II, Matrix Algebra & Differential Equations I</li>
+							<li>Calculus II, Calculus III</li>
+							<li class="">Introduction to Proofs</li>
+						</ul>
+						<span class="list-header">Computer Science/Software Engineering Department Grader:</span>
+						<ul>
+							<li class="table-list-last">Introduction to Systems Programming</li>
+						</ul></td>
+					</td>
+					<!-- <td><br /></td> -->
+				</tr>
+				<tr>
+					<!-- <td class="resume-dates">Fall 2020</td> -->
+				</tr>
+				<tr>
+					<!-- <td class="resume-dates">Winter 2020-2021</td> -->
+				</tr>
+				<tr>
+					<!-- <td class="resume-dates">Spring 2021</td> -->
+				</tr>
+				<tr>
+					<!-- <td class="resume-dates">Summer 2021-current</td> -->
+				</tr>
+				<tr>
+					<!-- <td><br/></td> -->
+				</tr>
+				<tr>
+					<!-- <td class="resume-dates">Spring 2021-current</td> -->
+				</tr>
+				<tr>
+					<td rowspan="7" class="heading">Activities & Leadership Roles:</td>
+					<td><span class="heading">Game Development Club</span>, Lake Central High School</td>
+					<!-- <td class="resume-dates">2017-2020</td> -->
+				</tr>
+				<tr>
+					<td><span class="list-header">Instructor:</span>
+						<ul>
+							<li class="table-list-last">Produced and taught coding lessons, lead a collaborative project</li>
+						</ul></td>
+					<!-- <td class="resume-dates">2019-2020</td> -->
+				</tr>
+				<tr>
+					<td><span class="list-header"><a href="http://gravvi.space">Gravvi.space</a> Developer:</span>
+						<ul>
+							<li class="table-list-last">Implemented collision, circular motion, and screen scaling; patched bugs</li>
+						</ul></td>
+					<!-- <td class="resume-dates">Mar-Jul 2019</td> -->
+				</tr>
+				<tr>
+					<td><span class="heading">Chess Club</span>, Rose-Hulman Institute of Technology</td>
+					<!-- <td class="resume-dates">2020-current</td> -->
+				</tr>
+				<tr>
+					<td><span class="list-header">Treasurer:</span>
+						<ul>
+							<li class="table-list-last">Keeping track of club assets, making requests for funding</li>
+						</ul></td>
+					<!-- <td class="resume-dates">Sep 2021-current</td> -->
+				</tr>
+				<tr>
+					<td><span class="list-header">Secretary:</span>
+						<ul>
+							<li class="table-list-last">Keeping attendance records, recording meeting events and attendance</li>
+						</ul></td>
+					<!-- <td class="resume-dates">Jan 2021-current</td> -->
+				</tr>
+				<tr>
+					<td><span class="heading">Role-Playing Club</span>, Rose-Hulman Institute of Technology</td>
+					<!-- <td class="resume-dates">Sep 2020-current</td> -->
+				</tr>
+				<tr>
+					<td class="heading">Honors:</td>
+					<td><span class="heading">AATF <em>Grand Concours</em> Category 4A</span>: National Silver & Chapter Gold Awards</td>
+					<!-- <td class="resume-dates">May 2020</td> -->
+				</tr>
+			</tbody>
+		</table>
+
+		<button id="up-btn" onclick="moveUp()">Up</button>
+		<footer>
+			You can e-mail me at <a href="mailto:napiwoej@rose-hulman.edu">napiwoej@rose.hulman.edu</a>.
+			But don't; I don't want to be e-mailed.
+		</footer>
+		<script src="scripts/background.js"></script>
+		<script src="scripts/moveup.js"></script>
 	</body>
 </html>
